@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body id="b">
+
+    <span style="display: inline-block;"> 
+    <button id="mode" onclick="darkMode()"> Dark Mode</button>
+    </span>
+
+    <div id="main">
+        <div>
+            <input id="screen" type="text">
+        </div>
+
+        <div>
+            <button class="extBtn" onclick="clr()" style="background-color: orange;">C</button>
+            <button class="extBtn" onclick="getNum('%')">%</button>
+            <button class="extBtn" onclick="getNum('!'); fact()">!</button>
+            <button class="extBtn" onclick="ans()">=</button>
+        </div>
+
+    <span id="numPad" style="display: inline-block;">
+        <div>
+            <button class="numPadBtn" onclick="getNum('7')">7</button>
+            <button class="numPadBtn" onclick="getNum('8')">8</button>
+            <button class="numPadBtn" onclick="getNum('9')">9</button>
+            
+        </div>
+        <div>
+            <button class="numPadBtn" onclick="getNum('4')">4</button>
+            <button class="numPadBtn" onclick="getNum('5')">5</button>
+            <button class="numPadBtn" onclick="getNum('6')">6</button>
+        
+        </div>            
+        <div>
+            <button class="numPadBtn" onclick="getNum('1')">1</button>
+            <button class="numPadBtn" onclick="getNum('2')">2</button>
+            <button class="numPadBtn" onclick="getNum('3')">3</button>
+        
+        </div>
+        <div>
+            <button class="numPadBtn" onclick="getNum('0')">0</button>
+        
+        </div> 
+    </span>
+    <span id="opPad" style="display: inline-block;">
+        <div>
+            <button class="opPadBtn" onclick="getNum('*')">x</button>
+        </div>
+        <div>
+            <button class="opPadBtn" onclick="getNum('+')">+</button>
+        </div>
+        <div>
+            <button class="opPadBtn" onclick="getNum('-')">-</button>
+        </div>
+        <div>
+            <button class="opPadBtn" onclick="getNum('/')">/</button>
+        </div>
+    </span>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
