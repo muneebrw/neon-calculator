@@ -1,15 +1,39 @@
 body{
     background-color: lightblue;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+#btnDiv{
+    margin-bottom: 0;
+    margin-top: 6%;
+    width: 200px;
+    height: 200px;
+}
+
+#mode{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    
 }
 
 #main{
-    margin: 0 auto;
+    margin: 0 6% 0 6%;
     border: 2px solid black;
     width: 400px;
     height: 500px;
     text-align: center;
+    align-items: center;
     overflow: hidden;
     background-color: #E3F08E;
+
 }
 
 #screen{
@@ -24,36 +48,35 @@ body{
 }
 
 
+#numPad{
+    padding: 0;
+    width: 75%;
+    height: 70%;
+}
+
 .numPadBtn{
-    width: 80px;
-    height: 70px;
+    width: 27%;
+    height: 55px;
     font-size: 25px;
     background-color: #FDDC22;
+    margin-right: 0;
 }
 
 .extBtn{
     
-    width: 80px;
-    height: 70px;
+    width: 20%;
+    height: 55px;
     font-size: 25px;
     background-color: #FDDC22;
 }
 
 .opPadBtn{
-    width: 80px;
-    height: 70px;
+    
+    margin-left: 0;
+    width: 55px;
+    height: 55px;
     font-size: 25px;
     background-color: #FDDC22;
 
 
-}
-
-#mode{
-    padding: 5px;
-    background-color: black;
-    color: white;
-    position: relative;
-    left: 150px;
-    top: 200px;
-    
 }
